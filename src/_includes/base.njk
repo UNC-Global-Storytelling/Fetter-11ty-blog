@@ -21,6 +21,17 @@
             </div>
         </div>
     </nav>
+    <div class="breadcrumb">
+        <a href="/">Home</a>
+        {% if page.url contains '/posts/' %}
+            > <a href="/posts/">Posts</a>
+            {% if page.url != '/posts/' %}
+                > <span>{{ title }}</span>
+            {% endif %}
+        {% elseif page.url contains '/about/' %}
+            > <span>About</span>
+        {% endif %}
+    </div>
     <header>
         <h1>{{ title }}</h1>
     </header>
