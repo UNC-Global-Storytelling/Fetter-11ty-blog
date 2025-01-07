@@ -21,17 +21,6 @@
             </div>
         </div>
     </nav>
-    <div class="breadcrumb">
-        <a href="{{ pathPrefix }}">Home</a>
-        {% if page.url contains '/posts/' %}
-            > <a href="{{ pathPrefix }}posts/">Posts</a>
-            {% if page.url != '/posts/' %}
-                > <span>{{ title }}</span>
-            {% endif %}
-        {% elseif page.url contains '/about/' %}
-            > <span>About</span>
-        {% endif %}
-    </div>
     <main>
         {{ content | safe }}
     </main>
