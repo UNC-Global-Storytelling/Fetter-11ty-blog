@@ -69,26 +69,18 @@ nav a:hover, nav a.active {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.breadcrumb {
-    padding: 10px 20px;
-    background-color: #e9ecef;
-    margin: 20px 0;
-}
-.breadcrumb a {
-    color: #75aadb;
-    text-decoration: none;
-}
-.breadcrumb a:hover {
-    text-decoration: underline;
-}
+
 header {
-    display: none; /* Hide the header */
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 main {
     padding: 20px;
 }
 
-/* Custom class */
+/* Custom purple class */
 .purple {
     color: rgb(157, 48, 240);
 }
@@ -101,7 +93,6 @@ main {
     justify-content: center;
 }
 .post-card {
-    background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

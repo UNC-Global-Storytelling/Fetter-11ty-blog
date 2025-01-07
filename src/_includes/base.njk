@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ pathPrefix }}styles.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <nav>
-        <a href="{{ pathPrefix }}">My Blog</a>
-        <a href="{{ pathPrefix }}about/">About</a>
+        <a href="/">My Blog</a>
+        <a href="/about/">About</a>
         <div class="dropdown">
             <button class="dropbtn">Posts 
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
                 {% for post in collections.posts %}
-                <a href="{{ pathPrefix }}{{ post.url }}">{{ post.data.title }}</a>
+                <a href="{{ post.url }}">{{ post.data.title }}</a>
                 {% endfor %}
             </div>
         </div>
