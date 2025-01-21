@@ -24,6 +24,11 @@ jobs:
       - name: Build the site
         run: npm run build
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "aefetter@unc.edu"
+          git config --global user.name "anna"
+
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:
