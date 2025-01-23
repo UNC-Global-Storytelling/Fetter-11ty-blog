@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "env NODE_ENV=production npx eleventy --pathprefix '11ty-blog-demo'",
+    "build": "env NODE_ENV=production npx eleventy --pathprefix 'Fetter-11ty-blog'",
     "deploy": "npm run build && npx gh-pages -d docs"
   },
   "keywords": [],
